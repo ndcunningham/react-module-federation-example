@@ -1,0 +1,101 @@
+{
+  "root": "apps/accept-transfer",
+  "sourceRoot": "apps/accept-transfer/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/accept-transfer",
+        "index": "apps/accept-transfer/src/index.html",
+        "baseHref": "/",
+        "main": "apps/accept-transfer/src/main.ts",
+        "polyfills": "apps/accept-transfer/src/polyfills.ts",
+        "tsConfig": "apps/accept-transfer/tsconfig.app.json",
+        "assets": [
+          "apps/accept-transfer/src/favicon.ico",
+          "apps/accept-transfer/src/assets"
+        ],
+        "styles": ["apps/accept-transfer/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "apps/accept-transfer/webpack.config.js"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/accept-transfer/src/environments/environment.ts",
+              "with": "apps/accept-transfer/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false,
+          "webpackConfig": "apps/accept-transfer/webpack.config.prod.js"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/react:module-federation-dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "accept-transfer:build",
+        "hmr": true,
+        "port": 4202
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "accept-transfer:build:development"
+        },
+        "production": {
+          "buildTarget": "accept-transfer:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/accept-transfer/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/accept-transfer"],
+      "options": {
+        "jestConfig": "apps/accept-transfer/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "serve-static": {
+      "executor": "@nrwl/web:file-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "accept-transfer:build",
+        "port": 4202
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "accept-transfer:build:development"
+        },
+        "production": {
+          "buildTarget": "accept-transfer:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}

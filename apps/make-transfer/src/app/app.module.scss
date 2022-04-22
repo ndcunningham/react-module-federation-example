@@ -1,0 +1,53 @@
+/* Your styles goes here. */
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 768px;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: rgba(55, 65, 81, 1);
+    width: 100%;
+}
+
+.ques {
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.intake {
+    display: flex;
+    justify-content: space-evenly;
+    input {
+        font-size: 2rem;
+        border: 1px solid grey;
+        padding: 0 2rem;
+    }
+    button {
+        width: 180px;
+        height: 80px;
+        outline: none;
+        border: 2px solid #1976D2;
+        color: red;
+        cursor: pointer;
+        background: none;
+        transition: .5s;
+        font-size: 24px;
+        border-radius: 5px;
+        font-family: "Lato",sans-serif;
+        &:hover{
+          border: none;
+          color: white;
+          font-size: 28px;
+          background-color: #1976D2;
+          transition: all 0.3s ease-in-out;
+          transform:scale(1.1);
+        }
+    }
+}
+

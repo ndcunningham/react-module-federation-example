@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "accept-transfer": "apps/accept-transfer",
+    "landing": "apps/landing",
+    "make-transfer": "apps/make-transfer",
+    "transfer": "libs/transfer"
+  }
+}
