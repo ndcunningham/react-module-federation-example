@@ -1421,13 +1421,13 @@
     semver "7.3.4"
     tslib "^2.3.0"
 
-"@nrwl/eslint-plugin-nx@14.1.0":
-  version "14.1.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-14.1.0.tgz#957da01f9f846b4f36f077ec92d92a25a7286d76"
-  integrity sha512-xaTRUFZUe4OVSkcCgQlpLpbywiAbYCl1flRXGJB9+k10IMuiRaio7/AQ7xCWsSc/mr6kH+aDgjS1wBsktWB5aQ==
+"@nrwl/eslint-plugin-nx@14.1.1":
+  version "14.1.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-14.1.1.tgz#83385c4de7281c57737130038ff1c7db7e66f228"
+  integrity sha512-+v5WEs5Ka8uCAAJV0T0yDIByjcWa/ro7savgxHs0Hpj1KVKy1Fo3E7uZR7545gPFtKPr7EYznn59c/yIj1o4ZQ==
   dependencies:
-    "@nrwl/devkit" "14.1.0"
-    "@nrwl/workspace" "14.1.0"
+    "@nrwl/devkit" "14.1.1"
+    "@nrwl/workspace" "14.1.1"
     "@typescript-eslint/experimental-utils" "~5.18.0"
     chalk "4.1.0"
     confusing-browser-globals "^1.0.9"
@@ -1537,21 +1537,21 @@
     strip-json-comments "^3.1.1"
     tar "6.1.11"
 
-"@nrwl/react@^14.1.0":
-  version "14.1.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-14.1.1.tgz#ddec13eb46fe8481b5607f1f6beb6be2f060e9ba"
-  integrity sha512-ZBT9BSulS48qz8sFOdUTC+GtR4CNRsKe6S2bh0L2egQODHLAyumRA8+hp2HS2NkH7VxsT+iw0iR50NyXzFDFcg==
+"@nrwl/react@14.1.0":
+  version "14.1.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-14.1.0.tgz#6fa360afb8b44c57b01c4ca930bd5b2938caec6c"
+  integrity sha512-n50dlcWu5KbyqyFbWi+ZqxTFlQKokeahSVlbJNeq8RZpRfqKrhp/qwYG7A1WbHdeKKS3JTtGouwmYD9tzRb8gg==
   dependencies:
     "@babel/core" "^7.15.0"
     "@babel/preset-react" "^7.14.5"
-    "@nrwl/cypress" "14.1.1"
-    "@nrwl/devkit" "14.1.1"
-    "@nrwl/jest" "14.1.1"
-    "@nrwl/js" "14.1.1"
-    "@nrwl/linter" "14.1.1"
-    "@nrwl/storybook" "14.1.1"
-    "@nrwl/web" "14.1.1"
-    "@nrwl/workspace" "14.1.1"
+    "@nrwl/cypress" "14.1.0"
+    "@nrwl/devkit" "14.1.0"
+    "@nrwl/jest" "14.1.0"
+    "@nrwl/js" "14.1.0"
+    "@nrwl/linter" "14.1.0"
+    "@nrwl/storybook" "14.1.0"
+    "@nrwl/web" "14.1.0"
+    "@nrwl/workspace" "14.1.0"
     "@pmmmwh/react-refresh-webpack-plugin" "^0.5.1"
     "@storybook/node-logger" "6.1.20"
     "@svgr/webpack" "^6.1.2"
@@ -1566,15 +1566,15 @@
     webpack "^5.58.1"
     webpack-merge "^5.8.0"
 
-"@nrwl/storybook@14.1.1":
-  version "14.1.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/storybook/-/storybook-14.1.1.tgz#9da7c17989550e97c3cbf3f9d4ad031420ea8881"
-  integrity sha512-ih4fYbdSOqBDj030gtvpzQmTQKIp1F+D9m4RgNAtsZx6ZlR7tWx1P6PaI3mFjO9LwnhShlogqIzy9m1q/Eg+Ig==
+"@nrwl/storybook@14.1.0":
+  version "14.1.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/storybook/-/storybook-14.1.0.tgz#2698ade6cd6889d20ba05a239f47af85b792e971"
+  integrity sha512-jyFXF/2UdHnn2G0xFW/KMGhC+P5DBZtnMMdu5A0K7uV7BRaWLYBY8MXupcn6oGBxNefPylkb6xd6eqX7o6VADQ==
   dependencies:
-    "@nrwl/cypress" "14.1.1"
-    "@nrwl/devkit" "14.1.1"
-    "@nrwl/linter" "14.1.1"
-    "@nrwl/workspace" "14.1.1"
+    "@nrwl/cypress" "14.1.0"
+    "@nrwl/devkit" "14.1.0"
+    "@nrwl/linter" "14.1.0"
+    "@nrwl/workspace" "14.1.0"
     core-js "^3.6.5"
     semver "7.3.4"
     ts-loader "^9.2.6"
