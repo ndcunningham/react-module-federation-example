@@ -15,7 +15,7 @@ Module federation splits your application vertically into separate buildable fea
 ## Structure & Layout
 
 This workspace has:
-- A host or shell
+- A Host
 - 2 Remote features
 - A shared library
 
